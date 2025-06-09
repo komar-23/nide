@@ -3,6 +3,6 @@ return {
   event = "VeryLazy",
   opts = {},
   keys = {
-    { "<leader>m", "<cmd>MarksListAll<CR>"}
+    { "<leader>m", "<cmd>MarksListAll<CR>", desc = "Marks list", mode ="n"}
   }
 }

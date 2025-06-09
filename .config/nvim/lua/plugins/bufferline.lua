@@ -12,7 +12,4 @@ return {
       end
     }
   },
-  -- keys = {
-  --    {"n", "<leader>d", "<cmd>bd<CR>"}
-  -- }
 }

@@ -20,7 +20,6 @@ vim.opt.rtp:prepend(lazypath)
 -- This is also a good place to setup other settings (vim.opt)
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
--- opts.rocks.enabled = false
 
 -- Setup lazy.nvim
 require("lazy").setup({
@@ -29,6 +28,9 @@ require("lazy").setup({
     { import = "plugins" }
   },
   -- Configure any other settings here. See the documentation for more details.
+  rocks = {
+    enabled = false,
+  },
   -- colorscheme that will be used when installing plugins.
   install = {
     -- orginal colorscheme = "hebamax"

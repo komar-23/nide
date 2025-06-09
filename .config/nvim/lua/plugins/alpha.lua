@@ -11,7 +11,7 @@ return {
     -- )
   -- end
   config = function ()
-    vim.keymap.set('n', '<leader>ss', '<cmd>Alpha<cr>')
+    vim.keymap.set('n', '<leader>ss', '<cmd>Alpha<cr>', {desc = 'Main menu'})
     local alpha = require'alpha'
     local dashboard = require'alpha.themes.dashboard'
     dashboard.section.header.val = {
@@ -48,4 +48,3 @@ return {
     alpha.setup(dashboard.config)
   end
 }
-
