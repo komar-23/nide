@@ -13,8 +13,7 @@ return {
   config = function ()
     vim.keymap.set('n', '<leader>ss', '<cmd>Alpha<cr>', {desc = 'Main menu'})
     local alpha = require'alpha'
-    local dashboard = require'alpha.themes.dashboard'
-    dashboard.section.header.val = {
+    local dashboard = require'alpha.themes.dashboard' dashboard.section.header.val = {
       [[      ___                       ___           ___     ]],
       [[     /\__\          ___        /\  \         /\  \    ]],
       [[    /::|  |        /\  \      /::\  \       /::\  \   ]],
@@ -34,6 +33,8 @@ return {
       dashboard.button( "Space fg", "󰈞  Find word" , " fg"),
       dashboard.button( "Space fh", "󰋗  Find help" , " fh"),
       dashboard.button( "Space ww", "󰖬  Wiki" , " ww"),
+      dashboard.button( "Space ll", "  Plugins managment" , " ll"),
+      dashboard.button( "Space mm", "  LSP management" , " mm"),
       dashboard.button( "q", "󰅚  Quit NVIM" , ":qa<CR>"),
     }
     local handle = io.popen('fortune')
