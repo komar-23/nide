@@ -20,7 +20,7 @@ vim.opt.rtp:prepend(lazypath)
 -- This is also a good place to setup other settings (vim.opt)
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
-vim.keymap.set('n', '<leader>ll', '<cmd>Lazy<cr>', { desc = 'Plugins Management' })
+vim.keymap.set('n', '<leader>mp', '<cmd>Lazy<cr>', { desc = 'Plugins Management' })
 
 -- Setup lazy.nvim
 require("lazy").setup({

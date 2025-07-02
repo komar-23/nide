@@ -8,7 +8,7 @@ return {
 
     configs.setup({
       -- A list of parser names, or "all" (the listed parsers MUST always be installed)
-      ensure_installed = { "bash", "cmake", "cpp", "dockerfile", "json", "c", "lua", "vim", "vimdoc", "make", "markdown", "python", "toml", "yaml", "xml"},
+      ensure_installed = { "bash", "cmake", "cpp", "dockerfile", "json", "c", "lua", "vim", "vimdoc", "make", "markdown", "python", "toml", "yaml", "xml", "html"},
 
       -- Install parsers synchronously (only applied to `ensure_installed`)
       -- sync_install = false,
