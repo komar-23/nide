@@ -46,8 +46,8 @@ return {
       dashboard.button( "Space fg", "󰈞  Find word" , " fg"),
       dashboard.button( "Space fh", "󰋗  Find help" , " fh"),
       dashboard.button( "Space ww", "󰖬  Wiki" , " ww"),
-      dashboard.button( "Space ll", "  Plugins managment" , " ll"),
-      dashboard.button( "Space mm", "  LSP management" , " mm"),
+      dashboard.button( "Space ml", "  Plugins managment" , " ml"),
+      dashboard.button( "Space mp", "  LSP management" , " mp"),
       dashboard.button( "q", "󰅚  Quit NVIM" , ":qa<CR>"),
     }
     local handle = io.popen('fortune')
