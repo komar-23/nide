@@ -4,6 +4,11 @@
 -- vim.opt.smarttab = false
 -- vim.opt.wildignore = { '*.o', '*.a', '__pycache__' }
 
+-- disable netrw at the very start of your init.lua
+-- Only needed if NVIM-TREE is used (otherwise must be removed)
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 -- No compatibility with vi
 vim.o.compatible = false
 
@@ -88,6 +93,8 @@ vim.o.cursorcolumn = true
 
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.o.scrolloff = 10
+-- Keep 8 columns left/right of cursor
+-- vim.opt.sidescrolloff = 8
 
 -- if performing an operation that would fail due to unsaved changes in the buffer (like `:q`),
 -- instead raise a dialog asking if you wish to save the current file(s)
@@ -101,6 +108,12 @@ vim.o.softtabstop = -1
 vim.o.smarttab = true
 vim.o.autoindent = true
 vim.o.smartindent = true
+
+-- Visual settings
+vim.opt.termguicolors = true
+-- vim.opt.signcolumn = "yes"
+
+vim.opt.lazyredraw = true
 
 vim.o.incsearch = true
 
